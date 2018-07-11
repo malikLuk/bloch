@@ -21,6 +21,7 @@ package article4;
 
 public class PrivateConstructorUtils {
 
+    // throw new AssertionError() можно опустить
     private PrivateConstructorUtils() {
         throw new AssertionError();
     }

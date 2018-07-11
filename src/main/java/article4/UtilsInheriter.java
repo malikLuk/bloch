@@ -1,7 +1,7 @@
 package article4;
 
 /**
- * нельзя
+ * нельзя наследоваться от класса с закрытым конструктором
  * */
 public class UtilsInheriter /*extends PrivateConstructorUtils*/ {
 }

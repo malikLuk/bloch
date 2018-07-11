@@ -55,8 +55,20 @@ package article1;
 public class StaticGenMethods {
 
     public static void main(String[] args) {
-        A<String> as = new A<String>();
-        as.add("kk");
+        for (int k = 0; k < 10; k++) {
+            System.out.println(TestStatic.generate());
+        }
     }
+
+}
+
+
+class TestStatic {
+
+    static TestStatic generate() {
+        return new TestStatic();
+    }
+
+    static TestStatic instance = new TestStatic();
 
 }
