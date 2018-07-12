@@ -1,4 +1,4 @@
-package article1;
+package ch2.article1;
 
 /**
  * Created by Lukmanov.MN on 04.07.2018.

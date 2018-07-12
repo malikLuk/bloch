@@ -39,7 +39,7 @@
  * */
 
 
-package article2;
+package ch2.article2;
 
 public class PatternBuilder {
 

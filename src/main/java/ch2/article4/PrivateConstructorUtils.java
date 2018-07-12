@@ -17,7 +17,7 @@
  *
  * */
 
-package article4;
+package ch2.article4;
 
 public class PrivateConstructorUtils {
 

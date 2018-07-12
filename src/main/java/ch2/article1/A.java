@@ -1,4 +1,4 @@
-package article1;
+package ch2.article1;
 
 import java.util.ArrayList;
 

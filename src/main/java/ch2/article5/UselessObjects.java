@@ -33,7 +33,7 @@
  *
  * */
 
-package article5;
+package ch2.article5;
 
 import java.util.Calendar;
 import java.util.Date;

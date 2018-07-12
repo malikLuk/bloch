@@ -21,7 +21,7 @@
  * */
 
 
-package article6;
+package ch2.article6;
 
 import java.util.Arrays;
 import java.util.EmptyStackException;

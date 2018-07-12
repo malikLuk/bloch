@@ -50,7 +50,7 @@
  *
  * */
 
-package article1;
+package ch2.article1;
 
 public class StaticGenMethods {
 

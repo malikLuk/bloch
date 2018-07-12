@@ -20,7 +20,7 @@
  * */
 
 
-package article3;
+package ch2.article3;
 
 class SingletonFinalField {
 
