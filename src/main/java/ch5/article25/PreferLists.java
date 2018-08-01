@@ -33,20 +33,20 @@ public class PreferLists {
         objectArray[0] = "Some message!";
 
         // Компилятор сругается сразу - еще до запуска
-        List<Object> ol = new ArrayList<Long>();
-        ol.add("Some message");
+//        List<Object> ol = new ArrayList<Long>();
+//        ol.add("Some message");
 
         // Предтавим, что эта строка разрешена
-        List<String>[] stringList = new List<String>[1];
+//        List<String>[] stringList = new List<String>[1];
         // Здесь создаем и инициализируем список Integer'ов, содержащий единственный элемент
         List<Integer> intList = Arrays.asList(42);
         // Сохраняем массив List<String> в массив объектов
-        Object[] objects = stringList;
+//        Object[] objects = stringList;
         // Сохраняем список интов в первый элемент массива объектов
-        objects[0] = intList;
+//        objects[0] = intList;
         // Все вышеописанные действия не приводят к ошибкам компиляции, засчет ковариантности массивов (тут все
         // наследуется от Object) и если бы не первая строка, которая запрещена - мы бы скомпилировали некорректный код
-        String s = stringList[0].get(0);
+//        String s = stringList[0].get(0);
 
     }
 
