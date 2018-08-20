@@ -16,21 +16,40 @@
  *  }
  * означает, что параметр типа T определяет тип, с которым можно сравнить реализацю элементовсамого типа Comparable. Если
  * короче, то ограничение вида <T extends Comparable<T>> можно прочитать как "для каждого типа Т, который может быть
- * сопоставлен с самим собой" или "для каждого типа, который реализует Comparable этого самого типа".
+ * сопоставлен с самим собой" или "для каждого типа, который реализует Comparable этого самого типа". Приведем пример,
+ *  который надо использовать для рассчета масимального значения списка, согласно натуральному порядку его элементов.
+ *  Метод max()
  *
  * */
 
 package ch5.article27;
 
 import java.util.HashSet;
+import java.util.Iterator;
+import java.util.List;
 import java.util.Set;
 
 public class GenericMethods {
+
+    // Возвращает максимальное значение из списка и использует
+    // рекурсивное ограничение типа (<T extends Comparable<T>>)
+    public static <T extends Comparable<T>> T max(List<T> list) {
+        Iterator<T> i = list.iterator();
+        T result = i.next();
+        while (i.hasNext()) {
+            T t = i.next();
+            if (t.compareTo(result) > 0) {
+                result = t;
+            }
+        }
+        return result;
+    }
 
     public static void main(String[] args) {
 
     }
 
+    @SuppressWarnings("unchecked")
     public static Set union(Set s1, Set s2) {
         Set result = new HashSet(s1);
         result.addAll(s2);
