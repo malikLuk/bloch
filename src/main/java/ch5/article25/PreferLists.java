@@ -36,10 +36,10 @@ public class PreferLists {
 //        List<Object> ol = new ArrayList<Long>();
 //        ol.add("Some message");
 
-        // Предтавим, что эта строка разрешена
+        // Представим, что эта строка разрешена
 //        List<String>[] stringList = new List<String>[1];
         // Здесь создаем и инициализируем список Integer'ов, содержащий единственный элемент
-        List<Integer> intList = Arrays.asList(42);
+//        List<Integer> intList = Arrays.asList(42);
         // Сохраняем массив List<String> в массив объектов
 //        Object[] objects = stringList;
         // Сохраняем список интов в первый элемент массива объектов

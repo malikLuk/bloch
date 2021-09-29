@@ -24,10 +24,7 @@
 
 package ch5.article27;
 
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class GenericMethods {
 
@@ -46,7 +43,7 @@ public class GenericMethods {
     }
 
     public static void main(String[] args) {
-
+        System.out.println(max(Arrays.asList(4,5,6,7,1,10)));
     }
 
     @SuppressWarnings("unchecked")

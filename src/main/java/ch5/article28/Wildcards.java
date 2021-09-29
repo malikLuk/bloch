@@ -17,9 +17,19 @@ import java.util.List;
 
 public class Wildcards {
 
+    static void test(List<B> l1) {
+        l1.add(new C());
+    }
+
     public static void main(String[] args) {
-        A<B> aa = new A<B>(new B());
+        List<B> bb = new ArrayList<>();
+        bb.add(new C());
+        test(bb);
+
+
+        A<B> aa = new A<>();
         aa.add(new C());
+        System.out.println(aa.getVal(0).toString());
         System.out.println(1);
     }
 
@@ -30,8 +40,11 @@ class A<T> {
     T v1;
     List<T> al = new ArrayList<T>();
 
-    public A(T v1) {
+    /*public A(T v1) {
         this.v1 = v1;
+    }*/
+    <T> T getVal(int i) {
+        return (T)al.get(i);
     }
 
     void add(T el){
@@ -49,5 +62,9 @@ class B {
 }
 
 class C extends B {
+
+    public String toString() {
+        return "q";
+    }
 
 }
